@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import AddToCartButton from './AddToCartButton'
+import Tag from './Tag'
 
 const Card = styled.div`
 border: 2px solid black;
@@ -17,28 +18,15 @@ display:flex;
 flex-direction: row;
 `
 
-const Tag = styled.div`
-color: white;
-background-color: black;
-padding: 0.5rem;
-margin: 0.25rem;
-border-radius: 0.5rem;
-
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
-`
-
 export default function ProductCard( props ) {
-  console.log(props)
+  // console.log(props)
   return (
     <Card>
       <h3>{props.name}</h3>
       Price €: {props.price}
       <TagBox>
       {
-        props.tags.map( (tag, i) => <Tag key={i} >{tag}</Tag> )
+        props.tags.map( (tag, i) => <Tag key={i} text={tag} /> )
       }
       </TagBox>
       <img src={props.img} alt="air" height="100"/>

@@ -4,7 +4,7 @@
       "id": 1,
       "name": "clean air",
       "price": 75,
-      "tags": [ "clean", "fresh", "forest", "no-color" ],
+      "tags": [ "clean", "forest", "no-color" ],
       "description": "Very clean air from a nice forest.",
       "bought": 25,
       "img": "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F28%2F2016%2F03%2Flondon-air-SALE0316.jpg&q=85"
@@ -13,7 +13,7 @@
     "id": 2,
     "name": "dirty air",
     "price": 10,
-    "tags": [ "smog", "smelly", "dirty", "factory" ],
+    "tags": [ "smelly", "factory" ],
     "description": "Very polluted air from the streets.",
     "bought": 7,
     "img": "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F28%2F2016%2F03%2Flondon-air-SALE0316.jpg&q=85"
@@ -22,7 +22,7 @@
     "id": 3,
     "name": "mountain air",
     "price": 1000,
-    "tags": [ "clean", "low oxigen", "mountain", "no-color" ],
+    "tags": [ "clean", "low oxigen", "no-color" ],
     "description": "Very clean air from the Himalaya region.",
     "bought": 5,
     "img": "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F28%2F2016%2F03%2Flondon-air-SALE0316.jpg&q=85"
@@ -31,7 +31,7 @@
     "id": 4,
     "name": "new york air",
     "price": 50,
-    "tags": [ "expensive", "polluted", "streets", "food smell" ],
+    "tags": [ "polluted", "streets", "smelly" ],
     "description": "Polluted air from New York streets, bursting with hotdog smell.",
     "bought": 10,
     "img": "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F28%2F2016%2F03%2Flondon-air-SALE0316.jpg&q=85"

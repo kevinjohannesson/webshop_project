@@ -1,5 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
+import { useSelector } from 'react-redux'
+import { selectAllTags } from '../store/product/selectors'
+import Tag from './Tag'
 
 const FilterBox = styled.div`
 display: flex;
@@ -32,9 +35,15 @@ background-color: green;
 
 
 export default function FilterAndSort() {
+
+  const allTags = useSelector(selectAllTags);
+  console.log(allTags);
+
   return (
     <FilterBox>
-      <Filter>filter by Tag</Filter>
+      <Filter>filter by Tag
+        { allTags.map( (tag, i) => <Tag key={i} text={tag}/> ) }
+      </Filter>
       <Sort>sort by: something</Sort>
     </FilterBox>
   )

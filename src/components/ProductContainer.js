@@ -1,7 +1,7 @@
 import React from 'react'
 import ProductCard from './ProductCard'
 import styled from 'styled-components'
-import { selectProducts } from '../store/product/selectors';
+import { selectProducts, selectFilteredProducts } from '../store/product/selectors';
 import { useSelector } from 'react-redux';
 import FilterAndSort from './FilterAndSort';
 
@@ -17,7 +17,12 @@ flex-direction: row;
 export default function ProductContainer() {
 
   const allProducts = useSelector(selectProducts);
-  console.log(allProducts)
+  // console.log(allProducts)
+  const filtered = useSelector(selectFilteredProducts('clean'))
+  console.log('filtered', filtered)
+  // const filterProducts = () => {
+
+  // }
 
   return (
     <React.Fragment>
