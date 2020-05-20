@@ -62,7 +62,7 @@ export default function FilterAndSort() {
         <select onChange={sortHandler}>
           <option value="none">None</option>
           <option value="price">Price</option>
-          <option value="popularity">Popularity</option>
+          <option value="bought">Popularity</option>
         </select>
       </Sort>
     </FilterBox>
