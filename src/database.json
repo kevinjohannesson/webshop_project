@@ -1,6 +1,6 @@
 {
   "app":{
-    "filter": "none",
+    "filters": [],
     "sort": "none"
   },
   "shoppingcart": {
