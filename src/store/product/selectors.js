@@ -12,7 +12,7 @@ export const selectFilteredProducts = tag => reduxState => {
 }
 
 export const selectProduct = (productId) => (reduxState) => {
-  return reduxState.products.find(
+  return reduxState.products.list.find(
     (product) => product.id === productId
   );
 };
