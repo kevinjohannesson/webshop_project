@@ -1,1 +1,1 @@
-export const selectFilterMethod = state => state;
+export const selectFilterMethod = state => state.app.filter;

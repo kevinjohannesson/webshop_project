@@ -37,14 +37,23 @@ background-color: green;
 export default function FilterAndSort() {
 
   const allTags = useSelector(selectAllTags);
-  console.log(allTags);
+  // console.log(allTags);
+  const sortHandler = ( event ) => {
+    console.log('sorting method changed')
+  }
 
   return (
     <FilterBox>
       <Filter>filter by Tag
         { allTags.map( (tag, i) => <Tag key={i} text={tag}/> ) }
       </Filter>
-      <Sort>sort by: something</Sort>
+      <Sort>sort by: 
+        <select onChange={sortHandler}>
+          <option value="none">None</option>
+          <option value="price">Price</option>
+          <option value="popularity">Popularity</option>
+        </select>
+      </Sort>
     </FilterBox>
   )
 }
