@@ -10,4 +10,3 @@ export const selectFilteredProducts = tag => reduxState => {
   else return reduxState.products.filter( 
                 product => product.tags.includes( tag ) );
 }
-
