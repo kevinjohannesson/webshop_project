@@ -1,19 +1,12 @@
-export const selectProducts = (reduxState) => reduxState.product.products;
+export const selectProducts = reduxState => reduxState.products;
 
-export const selectAllTags = (reduxState) =>
-  reduxState.product.products
-    .map((product) => [...product.tags]) // colect all the tags arrays
-    .reduce((a, b) => [...a, ...b], []) // combine them to 1 array
-    .filter((tag, index, arr) => arr.indexOf(tag) === index); // filter duplicate items
+export const selectAllTags = reduxState => 
+  reduxState.products.map( product => [...product.tags])
+    .reduce((a, b) => [...a, ...b], [])
+      .filter((tag, index, arr) => arr.indexOf(tag) === index);
 
-export const selectFilteredProducts = (tag) => (reduxState) => {
-  return reduxState.product.products.filter((product) =>
-    product.tags.includes(tag)
-  );
-};
-
-export const selectProduct = (productId) => (reduxState) => {
-  return reduxState.product.products.find(
-    (product) => product.id === productId
-  );
-};
+export const selectFilteredProducts = tag => reduxState => {
+  if(tag === 'none') return reduxState.products;
+  else return reduxState.products.filter( 
+                product => product.tags.includes( tag ) );
+}
