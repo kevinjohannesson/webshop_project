@@ -1,57 +1,56 @@
 {
-  "app":{
-    "filters": [],
-    "sort": "none"
-  },
-  "shoppingcart": {
+  "cart": {
     "items": []
   },
-  "products": [ 
-    {
-      "id": 1,
-      "name": "clean air",
-      "price": 75,
-      "tags": [ "clean", "forest", "no-color" ],
-      "description": "Very clean air from a nice forest.",
-      "bought": 25,
-      "img": "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F28%2F2016%2F03%2Flondon-air-SALE0316.jpg&q=85"
-    },
-    {
-      "id": 2,
-      "name": "Baked air",
-      "price": 78.50,
-      "tags": [ "empty", "clean", "no-color" ],
-      "description": "Looks like it's worth a lot, but is it?",
-      "bought": 1000,
-      "img": "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F28%2F2016%2F03%2Flondon-air-SALE0316.jpg&q=85"
-    },
-    {
-      "id": 3,
-      "name": "dirty air",
-      "price": 10,
-      "tags": [ "smelly", "factory" ],
-      "description": "Very polluted air from the streets.",
-      "bought": 7,
-      "img": "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F28%2F2016%2F03%2Flondon-air-SALE0316.jpg&q=85"
-    },
-    {
-      "id": 4,
-      "name": "mountain air",
-      "price": 1000,
-      "tags": [ "clean", "low oxigen", "no-color" ],
-      "description": "Very clean air from the Himalaya region.",
-      "bought": 5,
-      "img": "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F28%2F2016%2F03%2Flondon-air-SALE0316.jpg&q=85"
-    },
-    {
-      "id": 5,
-      "name": "new york air",
-      "price": 50,
-      "tags": [ "polluted", "streets", "smelly" ],
-      "description": "Polluted air from New York streets, bursting with hotdog smell.",
-      "bought": 10,
-      "img": "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F28%2F2016%2F03%2Flondon-air-SALE0316.jpg&q=85"
-    }
-
-  ]
+  "products": {
+    "sorting_method": "none",
+    "filters": [],
+    "list": [ 
+      {
+        "id": 1,
+        "name": "clean air",
+        "price": 75,
+        "tags": [ "clean", "forest", "no-color" ],
+        "description": "Very clean air from a nice forest.",
+        "bought": 25,
+        "img": "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F28%2F2016%2F03%2Flondon-air-SALE0316.jpg&q=85"
+      },
+      {
+        "id": 2,
+        "name": "Baked air",
+        "price": 78.50,
+        "tags": [ "empty", "clean", "no-color" ],
+        "description": "Looks like it's worth a lot, but is it?",
+        "bought": 1000,
+        "img": "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F28%2F2016%2F03%2Flondon-air-SALE0316.jpg&q=85"
+      },
+      {
+        "id": 3,
+        "name": "dirty air",
+        "price": 10,
+        "tags": [ "smelly", "factory" ],
+        "description": "Very polluted air from the streets.",
+        "bought": 7,
+        "img": "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F28%2F2016%2F03%2Flondon-air-SALE0316.jpg&q=85"
+      },
+      {
+        "id": 4,
+        "name": "mountain air",
+        "price": 1000,
+        "tags": [ "clean", "low oxigen", "no-color" ],
+        "description": "Very clean air from the Himalaya region.",
+        "bought": 5,
+        "img": "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F28%2F2016%2F03%2Flondon-air-SALE0316.jpg&q=85"
+      },
+      {
+        "id": 5,
+        "name": "new york air",
+        "price": 50,
+        "tags": [ "polluted", "streets", "smelly" ],
+        "description": "Polluted air from New York streets, bursting with hotdog smell.",
+        "bought": 10,
+        "img": "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F28%2F2016%2F03%2Flondon-air-SALE0316.jpg&q=85"
+      }
+    ]
+  }
 }

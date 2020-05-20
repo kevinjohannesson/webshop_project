@@ -1,7 +1,7 @@
 import React from 'react';
 import styled, { ThemeProvider } from 'styled-components';
 import { useSelector } from 'react-redux';
-import { isFilterActive } from '../store/app/selector';
+import { isFilterActive } from '../store/product/selectors';
 
 const TagEl = styled.button`
 color: black;

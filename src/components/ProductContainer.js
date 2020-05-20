@@ -3,9 +3,8 @@ import ProductCard from './ProductCard'
 import styled from 'styled-components'
 // import { selectProducts, selectFilteredProducts } from '../store/product/selectors';
 import { useSelector } from 'react-redux';
-import FilterAndSort from './FilterAndSort';
 // import { selectFilterMethod } from '../store/app/selector';
-import { selectFilteredAndSortedProducts } from '../store/selectors';
+import { selectFilteredAndSortedProducts } from '../store/product/selectors';
 
 const List = styled.div`
 min-height: 400px;
@@ -31,11 +30,10 @@ export default function ProductContainer() {
     // console.log('filteredProducts', filteredProducts)
 
     const products = useSelector(selectFilteredAndSortedProducts);
-    console.log('products', products)
+    // console.log('products', products)
 
   return (
     <React.Fragment>
-      <FilterAndSort />
       <List>
         {
           products.map( product => 
