@@ -11,3 +11,9 @@ export const selectFilteredProducts = (tag) => (reduxState) => {
     product.tags.includes(tag)
   );
 };
+
+export const selectProduct = (productId) => (reduxState) => {
+  return reduxState.product.products.find(
+    (product) => product.id === productId
+  );
+};
