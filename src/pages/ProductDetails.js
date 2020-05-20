@@ -21,33 +21,42 @@ const TagBox = styled.div`
   display: flex;
   flex-direction: row;
 `;
-const productDetail = styled.div`
-  display: flex;
-  flex-direction: row;
+const DetailsBox = styled.div`
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-left: 5rem;
+  margin-right: 5rem;
+`;
+
+const DetailBox = styled.div`
+  position: relative;
 `;
 
 export default function ProductDetails() {
   const { id } = useParams();
-  console.log("id", id);
+
   const product = useSelector(selectProduct(parseInt(id)));
-  console.log("product", product);
+
   return (
     <div>
-      <div>
-        {" "}
-        <img src={product.img} alt="air" height="100" />
-        <br />
-        Price €: {product.price}
-        <AddToCartButton />
-        <h2>{product.name}</h2>
-        <TagBox>
-          {product.tags.map((tag, i) => (
-            <TagEl key={i}>{tag}</TagEl>
-          ))}
-        </TagBox>
-      </div>
-      <br />
-      <div>{product.description}</div>
+      <DetailsBox>
+        <DetailBox>
+          <img src={product.img} alt="air" height="250" />
+          <br />
+          <h3>Price €: {product.price}</h3>
+          <AddToCartButton />
+        </DetailBox>
+        <DetailBox>
+          <h2>{product.name}</h2>
+          <TagBox>
+            {product.tags.map((tag, i) => (
+              <TagEl key={i}>{tag}</TagEl>
+            ))}
+          </TagBox>
+          <br />
+          <div>{product.description}</div>
+        </DetailBox>
+      </DetailsBox>
     </div>
   );
 }
